@@ -6,4 +6,8 @@ return {
     },
     version = false
   },
+  {
+    'echasnovski/mini.base16',
+    version = false
+  },
 }
