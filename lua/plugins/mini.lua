@@ -4,7 +4,6 @@ return {
     opts = {
       prefix = function() end
     },
-    lazy = true,
     version = false
   },
   {

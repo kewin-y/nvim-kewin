@@ -30,7 +30,11 @@
           pkgs.neovimUtils.makeNeovimConfig {
             customRC = ''
               set runtimepath^=${./.}
-              lua dofile("${./.}/init.lua")
+              lua << EOF
+                local config_path = "${./.}/lua"
+                package.path = config_path .. "/?.lua;" .. config_path .. "/?/init.lua;" .. package.path
+                dofile("${./.}/init.lua")
+              EOF
             ''; # A custom .vimrc file for the new neovim configuration
           }
           // {
