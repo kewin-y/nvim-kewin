@@ -3,7 +3,15 @@ return {
 		"ibhagwan/fzf-lua",
 		-- optional for icon support
 		dependencies = { "nvim-tree/nvim-web-devicons" },
-    cmd = {"FzfLua"},
-		opts = {}
-	}
+		cmd = { "FzfLua" },
+		opts = {
+			winopts = {
+				border = "single",
+				preview = {
+					border = "single",
+					scrollbar = false,
+				},
+			},
+		},
+	},
 }
