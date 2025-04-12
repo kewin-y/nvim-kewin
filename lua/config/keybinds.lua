@@ -9,6 +9,13 @@ end
 
 m("n", "<leader>w", toggleMiniFiles, { silent = true })
 
+-- fzf
+m("n", "<leader>ff", "<cmd>FzfLua files<CR>", { silent = true })
+m("n", "<leader>fw", "<cmd>FzfLua live_grep<CR>", { silent = true })
+m("n", "<leader>fb", "<cmd>FzfLua buffers<CR>", { silent = true })
+m("n", "<leader>bi", "<cmd>FzfLua<CR>", { silent = true })
+
+
 -- Turn off highlighting
 m("n", "<Esc>", "<cmd>noh<CR>", { silent = true })
 
@@ -34,6 +41,3 @@ m("v", "K", ":m '<-2<CR>gv=gv", { silent = true })
 m("n", "J", "mzJ`z")
 m("v", "<", "<gv")
 m("v", ">", ">gv")
-
-
-
