@@ -20,6 +20,7 @@ return {
         -- Define your formatters
         formatters_by_ft = {
             lua = { "stylua" },
+            markdown = { "prettierd" },
         },
         -- Set default options
         default_format_opts = {

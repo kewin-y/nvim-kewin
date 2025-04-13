@@ -21,8 +21,12 @@
           hello
           gcc
 
+          prettierd
+
           lua-language-server
           stylua
+
+          markdown-oxide
         ];
         /*
         nixpkgs.wrapNeovimUnstable is a function which takes two arguments:

@@ -9,6 +9,7 @@ return {
             { "<leader>ff", "<cmd>FzfLua files<CR>", { silent = true } },
             { "<leader>fw", "<cmd>FzfLua live_grep<CR>", { silent = true } },
             { "<leader>fb", "<cmd>FzfLua buffers<CR>", { silent = true } },
+            { "<leader>fo", "<cmd>FzfLua oldfiles<CR>", { silent = true } },
             { "<leader>bi", "<cmd>FzfLua<CR>", { silent = true } },
         },
         opts = {
