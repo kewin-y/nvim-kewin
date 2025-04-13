@@ -31,17 +31,18 @@ return {
             },
 
             completion = {
-                documentation = { auto_show = false} ,
+                documentation = { auto_show = false,
+                window = {
+                    scrollbar = false,
+                },
+            } ,
                 menu = {
                     scrollbar = false,
                     draw = {
                         treesitter = {"lsp"},
                         padding = { 0, 1 }, -- padding only on right side
-      components = {
-        kind_icon = {
-          text = function(ctx) return ' ' .. ctx.kind_icon .. ctx.icon_gap .. ' ' end
-        }
-      }
+                        columns = {
+                            { "kind_icon", "kind" }, { "label", "label_description", gap = 1 },                         },
                     },
                 },
             },

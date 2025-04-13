@@ -8,7 +8,6 @@ require("config.keybinds")
 require("config.lazy")
 require("config.ui")
 
-
 vim.api.nvim_create_autocmd({ "BufWritePre" }, {
     pattern = {"*"},
     group = vim.api.nvim_create_augroup("Format", {}),
