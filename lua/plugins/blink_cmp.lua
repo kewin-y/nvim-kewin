@@ -5,6 +5,8 @@ return {
         version = '1.*',
         event = "InsertEnter",
         lazy = true,
+        ---@module 'blink.cmp'
+        ---@type blink.cmp.Config
         opts = {
             keymap = {
                 preset = 'default',
@@ -27,7 +29,7 @@ return {
             },
 
             appearance = {
-              nerd_font_variant = 'Normal'
+              nerd_font_variant = 'normal'
             },
 
             completion = {
