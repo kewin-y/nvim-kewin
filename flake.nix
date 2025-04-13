@@ -20,6 +20,8 @@
         runtimeDeps = with pkgs; [
           hello
           gcc
+
+          lua-language-server
         ];
         /*
         nixpkgs.wrapNeovimUnstable is a function which takes two arguments:

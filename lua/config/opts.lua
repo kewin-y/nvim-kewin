@@ -1,6 +1,6 @@
 local o = vim.opt
 
-o.fillchars.eob = ""
+o.fillchars = { eob = " " }
 o.shiftwidth = 4
 o.tabstop = 2
 o.expandtab = true
