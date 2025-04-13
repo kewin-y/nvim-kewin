@@ -34,6 +34,15 @@ return {
                 documentation = { auto_show = false} ,
                 menu = {
                     scrollbar = false,
+                    draw = {
+                        treesitter = {"lsp"},
+                        padding = { 0, 1 }, -- padding only on right side
+      components = {
+        kind_icon = {
+          text = function(ctx) return ' ' .. ctx.kind_icon .. ctx.icon_gap .. ' ' end
+        }
+      }
+                    },
                 },
             },
 

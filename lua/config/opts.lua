@@ -1,10 +1,11 @@
 local o = vim.opt
 
 o.fillchars = { eob = " " }
+o.termguicolors = true
 o.shiftwidth = 4
 o.tabstop = 2
 o.expandtab = true
-o.smartindent = true	
+o.smartindent = true
 o.laststatus = 3
 o.showmode = false
 o.smartcase = true
