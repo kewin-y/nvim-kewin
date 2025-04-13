@@ -9,7 +9,6 @@ return {
 
             require("lualine").setup({
                 options = {
-                    icons_enabled = false,
                     global_status = true,
                     disabled_filetypes = {
                         statusline = {
@@ -142,8 +141,8 @@ return {
                     lualine_b = { "filename" },
                     lualine_c = { "branch", "diff" },
                     lualine_x = { "diagnostics" },
-                    lualine_y = { "progress" },
-                    lualine_z = { "location" },
+                    lualine_y = { "progress", "location" },
+                    lualine_z = { "filetype" },
                 },
             })
         end,

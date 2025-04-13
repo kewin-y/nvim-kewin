@@ -35,6 +35,7 @@
         */
         nvim = pkgs.wrapNeovimUnstable pkgs.neovim-unwrapped (
           pkgs.neovimUtils.makeNeovimConfig {
+              # LOL THANKS CHATGPT
             customRC = ''
               set runtimepath^=${./.}
               lua << EOF

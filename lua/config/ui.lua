@@ -21,7 +21,6 @@ local function hi_link(group, link)
 end
 
 hi("WinSeparator", { fg = colors.base02 })
-hi("VertSplit", { fg = colors.base01 })
 hi("NormalFloat", { fg = colors.base05, bg = colors.base00 })
 hi("FloatBorder", { fg = colors.base05, bg = colors.base00 })
 hi("LineNr", { fg = colors.base03 })
