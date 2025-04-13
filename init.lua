@@ -9,7 +9,7 @@ require("config.lazy")
 require("config.ui")
 
 vim.api.nvim_create_autocmd({ "BufWritePre" }, {
-    pattern = {"*"},
+    pattern = { "*" },
     group = vim.api.nvim_create_augroup("Format", {}),
     callback = function(_)
         local save_cursor = vim.fn.getpos(".")
