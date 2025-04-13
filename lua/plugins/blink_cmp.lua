@@ -30,7 +30,12 @@ return {
               nerd_font_variant = 'Normal'
             },
 
-            completion = { documentation = { auto_show = false} },
+            completion = {
+                documentation = { auto_show = false} ,
+                menu = {
+                    scrollbar = false,
+                },
+            },
 
             sources = {
               default = { 'lsp', 'path', 'snippets', 'buffer' },
@@ -40,4 +45,3 @@ return {
         opts_extend = { "sources.default" }
     }
 }
-
