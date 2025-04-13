@@ -47,7 +47,7 @@ hi("MiniFilesNormal", { fg = colors.base05, bg = colors.base00 })
 
 hi("BlinkCmpMenu", { fg = colors.base05, bg = colors.base00 })
 hi("BlinkCmpMenuBorder", { fg = colors.base05, bg = colors.base00 })
-hi("BlinkCmpMenuSelection", { fg = colors.base05, bg = colors.base02 })
+hi("BlinkCmpMenuSelection", { fg = colors.base05, bg = colors.base01 })
 hi("BlinkCmpKind", { bg = colors.base00 })
 
 hi_link("BlinkCmpKindClass", "Type")
