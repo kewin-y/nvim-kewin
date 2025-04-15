@@ -21,6 +21,14 @@
           hello
           gcc
 
+# needed for fzf
+          fzf
+          ripgrep
+
+# needed for blink
+          curl
+          git
+
           prettierd
 
           lua-language-server
