@@ -35,6 +35,8 @@
           stylua
 
           markdown-oxide
+
+          clang-tools
         ];
         /*
         nixpkgs.wrapNeovimUnstable is a function which takes two arguments:

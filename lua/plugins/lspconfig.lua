@@ -21,6 +21,7 @@ return {
             local servers = {
                 "lua_ls",
                 "markdown_oxide",
+                "clangd",
             }
 
             for _, server in pairs(servers) do
