@@ -23,12 +23,12 @@ return {
             markdown = { "prettierd" },
             c = { "clang-format" },
             cpp = { "clang-format" },
+            nix = { "alejandra" },
         },
         -- Set default options
         default_format_opts = {
             lsp_format = "fallback",
         },
-        -- Customize formatters
         formatters = {},
     },
     init = function()

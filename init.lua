@@ -28,3 +28,12 @@ vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
         vim.opt.tabstop = 8
     end,
 })
+
+vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
+    pattern = { "*.nix" },
+    group = format_group,
+    callback = function(_)
+        vim.opt.shiftwidth = 2
+        vim.opt.tabstop = 2
+    end,
+})

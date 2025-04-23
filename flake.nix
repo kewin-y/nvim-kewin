@@ -9,34 +9,24 @@
   outputs = inputs @ {flake-parts, ...}:
     flake-parts.lib.mkFlake {inherit inputs;} {
       systems = ["x86_64-linux" "aarch64-linux" "aarch64-darwin" "x86_64-darwin"];
-      perSystem = {
-        config,
-        self',
-        inputs',
-        pkgs,
-        system,
-        ...
-      }: let
+      perSystem = {pkgs, ...}: let
         runtimeDeps = with pkgs; [
           hello
           gcc
 
-# needed for fzf
+          # needed for fzf
           fzf
           ripgrep
 
-# needed for blink
+          # needed for blink
           curl
           git
 
           prettierd
+          markdown-oxide
 
           lua-language-server
           stylua
-
-          markdown-oxide
-
-          clang-tools
         ];
         /*
         nixpkgs.wrapNeovimUnstable is a function which takes two arguments:
@@ -45,7 +35,7 @@
         */
         nvim = pkgs.wrapNeovimUnstable pkgs.neovim-unwrapped (
           pkgs.neovimUtils.makeNeovimConfig {
-              # LOL THANKS CHATGPT
+            # LOL THANKS CHATGPT
             customRC = ''
               set runtimepath^=${./.}
               lua << EOF
@@ -68,6 +58,13 @@
         packages = rec {
           default = nvim;
           neovim = default;
+        };
+
+        devShells.default = pkgs.mkShell {
+          packages = with pkgs; [
+            nixd
+            alejandra
+          ];
         };
       };
     };

@@ -22,6 +22,7 @@ return {
                 "lua_ls",
                 "markdown_oxide",
                 "clangd",
+                "nixd",
             }
 
             for _, server in pairs(servers) do
