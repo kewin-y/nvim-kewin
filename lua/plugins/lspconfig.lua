@@ -23,6 +23,7 @@ return {
                 "markdown_oxide",
                 "clangd",
                 "nixd",
+                "astro-ls"
             }
 
             for _, server in pairs(servers) do
