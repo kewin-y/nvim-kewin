@@ -21,6 +21,7 @@ return {
         formatters_by_ft = {
             lua = { "stylua" },
             markdown = { "prettierd" },
+            astro = { "prettierd" },
             c = { "clang-format" },
             cpp = { "clang-format" },
             nix = { "alejandra" },
