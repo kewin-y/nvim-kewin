@@ -21,5 +21,4 @@ o.timeoutlen = 400
 o.undofile = true
 o.conceallevel = 1
 o.winborder = "single"
-o.shortmess:append("sI")
 o.whichwrap:append("<>[]hl")
