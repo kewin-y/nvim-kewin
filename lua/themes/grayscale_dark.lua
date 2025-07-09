@@ -1,5 +1,6 @@
 -- name: "Grayscale Dark"
 -- author: "Alexandre Gavioli (https://github.com/Alexx2/)"
+
 return {
     base00 = "#101010",
     base01 = "#252525",
@@ -10,9 +11,9 @@ return {
     base06 = "#e3e3e3",
     base07 = "#f7f7f7",
     base08 = "#7c7c7c",
-    base09 = "#999999",
+    base09 = "#93c092",
     base0A = "#a0a0a0",
-    base0B = "#8e8e8e",
+    base0B = "#98c379",
     base0C = "#868686",
     base0D = "#686868",
     base0E = "#747474",

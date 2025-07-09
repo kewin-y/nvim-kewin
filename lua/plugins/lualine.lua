@@ -27,7 +27,7 @@ return {
                         normal = {
                             a = {
                                 bg = colors.base01,
-                                fg = colors.base0D,
+                                fg = colors.base05,
                             },
                             b = {
                                 bg = colors.base01,
@@ -49,7 +49,7 @@ return {
                         insert = {
                             a = {
                                 bg = colors.base01,
-                                fg = colors.base0E,
+                                fg = colors.base05,
                             },
                             b = {
                                 bg = colors.base01,
@@ -71,7 +71,7 @@ return {
                         command = {
                             a = {
                                 bg = colors.base01,
-                                fg = colors.base08,
+                                fg = colors.base05,
                             },
                             b = {
                                 bg = colors.base01,
@@ -93,7 +93,7 @@ return {
                         visual = {
                             a = {
                                 bg = colors.base01,
-                                fg = colors.base0B,
+                                fg = colors.base05,
                             },
                             b = {
                                 bg = colors.base01,
@@ -115,7 +115,7 @@ return {
                         replace = {
                             a = {
                                 bg = colors.base01,
-                                fg = colors.base0A,
+                                fg = colors.base05,
                             },
                             b = {
                                 bg = colors.base01,
