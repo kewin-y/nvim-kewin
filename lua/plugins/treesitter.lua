@@ -17,6 +17,7 @@ return {
                     "markdown_inline",
                     "nix",
                     "astro",
+                    "typst",
                 },
                 sync_install = false,
                 auto_install = true,

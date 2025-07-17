@@ -25,6 +25,9 @@
           prettierd
           markdown-oxide
 
+          typstyle
+          tinymist
+
           lua-language-server
           stylua
         ];
