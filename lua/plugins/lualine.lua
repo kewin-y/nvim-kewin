@@ -9,6 +9,7 @@ return {
 
             require("lualine").setup({
                 options = {
+                    icons_enabled = false,
                     global_status = true,
                     disabled_filetypes = {
                         statusline = {
