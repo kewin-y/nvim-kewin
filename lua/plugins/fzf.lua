@@ -13,6 +13,9 @@ return {
             { "<leader>bi", "<cmd>FzfLua<CR>", { silent = true } },
         },
         opts = {
+            defaults = {
+                color_icons = false,
+            },
             winopts = {
                 border = "single",
                 preview = {
