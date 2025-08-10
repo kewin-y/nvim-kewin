@@ -1,15 +1,5 @@
 local colors = require("themes." .. _G.theme)
 
-require('nvim-web-devicons').setup({
-    color_icons = false,
-    override = {
-        ["default_icon"] = {
-            color = colors.base05,
-            name = "Default",
-        }
-    }
-})
-
 require("mini.base16").setup({
     palette = colors,
 })

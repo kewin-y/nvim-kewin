@@ -2,6 +2,7 @@ return {
     {
         "echasnovski/mini.files",
         lazy = true,
+        dependencies = { "echasnovski/mini.icons" },
         keys = {
             {
                 "<leader>w",
@@ -24,4 +25,5 @@ return {
         lazy = true,
         version = false,
     },
+    { "echasnovski/mini.icons", version = false, opts = {} },
 }

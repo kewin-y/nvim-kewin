@@ -2,7 +2,7 @@ return {
     {
         "ibhagwan/fzf-lua",
         -- optional for icon support
-        dependencies = { "nvim-tree/nvim-web-devicons" },
+        dependencies = { "echasnovski/mini.icons" },
         lazy = true,
         cmd = { "FzfLua" },
         keys = {
@@ -14,7 +14,7 @@ return {
         },
         opts = {
             defaults = {
-                color_icons = false,
+                file_icons = "mini",
             },
             winopts = {
                 border = "single",

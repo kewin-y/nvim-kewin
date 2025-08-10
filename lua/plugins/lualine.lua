@@ -1,7 +1,7 @@
 return {
     {
         "nvim-lualine/lualine.nvim",
-        dependencies = { "nvim-tree/nvim-web-devicons" },
+        dependencies = { "echasnovski/mini.icons" },
         lazy = true,
         event = "VeryLazy",
         config = function()
@@ -9,7 +9,7 @@ return {
 
             require("lualine").setup({
                 options = {
-                    icons_enabled = false,
+                    icons_enabled = true,
                     global_status = true,
                     disabled_filetypes = {
                         statusline = {
