@@ -25,6 +25,7 @@ hi("NormalFloat", { fg = colors.base05, bg = colors.base00 })
 hi("FloatBorder", { fg = colors.base05, bg = colors.base00 })
 hi("LineNr", { fg = colors.base03 })
 hi("SignColumn", { fg = colors.base03 })
+hi("StatusLine", { fg = colors.base04, bg = colors.base01})
 
 hi("DiagnosticFloatingError", { fg = colors.base08, bg = colors.base00 })
 hi("DiagnosticFloatingHint", { fg = colors.base0A, bg = colors.base00 })
