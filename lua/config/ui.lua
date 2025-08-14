@@ -21,9 +21,11 @@ local function hi_link(group, link)
 end
 
 hi("WinSeparator", { fg = colors.base02 })
-hi("NormalFloat", { fg = colors.base05, bg = colors.base00 })
+hi("NormalFloat", { fg = colors.base5, bg = colors.base00 })
 hi("FloatBorder", { fg = colors.base05, bg = colors.base00 })
 hi("LineNr", { fg = colors.base03 })
+hi("LineNrAbove", { fg = colors.base03 })
+hi("LineNrBelow", { fg = colors.base03 })
 hi("SignColumn", { fg = colors.base03 })
 hi("StatusLine", { fg = colors.base04, bg = colors.base01})
 

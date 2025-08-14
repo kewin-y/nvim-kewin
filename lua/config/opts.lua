@@ -1,24 +1,23 @@
-local o = vim.opt
-
-o.fillchars = { eob = " " }
-o.termguicolors = true
-o.shiftwidth = 4
-o.tabstop = 4
-o.expandtab = true
-o.smartindent = true
-o.laststatus = 3
-o.showmode = false
-o.smartcase = true
-o.foldmethod = "manual"
-o.mouse = "a"
-o.number = true
-o.numberwidth = 2
-o.ruler = false
-o.signcolumn = "yes"
-o.splitbelow = true
-o.splitright = true
-o.timeoutlen = 400
-o.undofile = true
-o.conceallevel = 1
-o.winborder = "single"
-o.whichwrap:append("<>[]hl")
+vim.opt.fillchars = { eob = " " }
+vim.opt.termguicolors = true
+vim.opt.shiftwidth = 4
+vim.opt.tabstop = 4
+vim.opt.expandtab = true
+vim.opt.smartindent = true
+vim.opt.laststatus = 3
+vim.opt.showmode = false
+vim.opt.smartcase = true
+vim.opt.foldmethod = "manual"
+vim.opt.mouse = ""
+vim.opt.number = true
+vim.opt.numberwidth = 2
+vim.opt.ruler = false
+vim.opt.signcolumn = "yes"
+vim.opt.splitbelow = true
+vim.opt.splitright = true
+vim.opt.timeoutlen = 400
+vim.opt.undofile = true
+vim.opt.conceallevel = 1
+vim.opt.winborder = "single"
+vim.opt.whichwrap:append("<>[]hl")
+vim.opt.relativenumber = true
