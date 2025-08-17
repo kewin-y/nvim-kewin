@@ -53,10 +53,10 @@ return {
 
                     local diag = vim.diagnostic
                     vim.keymap.set("n", "[d", function()
-                        diag.jump({ count = 1, float = true })
+                        diag.jump({ count = -1, float = true })
                     end, { desc = "Next Diagnostic" })
                     vim.keymap.set("n", "]d", function()
-                        diag.jump({ count = -1, float = true })
+                        diag.jump({ count = 1, float = true })
                     end, { desc = "Previous Diagnostic" })
                 end,
             })
