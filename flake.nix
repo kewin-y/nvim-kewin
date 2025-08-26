@@ -22,9 +22,9 @@
           curl
           git
 
+          # for my notes
           prettierd
           markdown-oxide
-
           typstyle
           tinymist
 
@@ -68,6 +68,10 @@
             nixd
             alejandra
           ];
+
+          shellHook = ''
+            export SHELL='${pkgs.mksh}/bin/mksh'
+          '';
         };
       };
     };

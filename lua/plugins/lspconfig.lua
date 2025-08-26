@@ -25,6 +25,7 @@ return {
                 "nixd",
                 "astro",
                 "tinymist",
+                "ts_ls",
             }
 
             for _, server in pairs(servers) do

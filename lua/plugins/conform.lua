@@ -25,7 +25,11 @@ return {
             c = { "clang-format" },
             cpp = { "clang-format" },
             nix = { "alejandra" },
-            typst = {"typstyle"},
+            typst = { "typstyle" },
+            js = { "prettierd" },
+            ts = { "prettierd" },
+            jsx = { "prettierd" },
+            tsx = { "prettierd" },
         },
         -- Set default options
         default_format_opts = {
