@@ -7,7 +7,7 @@ return {
     base03 = "#7b8496",
     base04 = "#7b8496",
     base05 = "#ffffff",
-    base06 = "#16181a",
+    base06 = "#ffffff",
     base07 = "#ffffff",
     base08 = "#ff6e5e",
     base09 = "#ffbd5e",
