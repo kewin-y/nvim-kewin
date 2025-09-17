@@ -10,35 +10,35 @@
     flake-parts.lib.mkFlake {inherit inputs;} {
       systems = ["x86_64-linux" "aarch64-linux" "aarch64-darwin" "x86_64-darwin"];
       perSystem = {pkgs, ...}: let
-        runtimeDeps = with pkgs; [
-          hello
-          gcc
+        runtimeDeps = [
+          pkgs.hello
+          pkgs.gcc
 
           # needed for fzf
-          fzf
-          ripgrep
+          pkgs.fzf
+          pkgs.ripgrep
 
           # needed for blink
-          curl
-          git
+          pkgs.curl
+          pkgs.git
 
           # for my notes
-          prettierd
-          markdown-oxide
-          typstyle
-          tinymist
+          pkgs.prettierd
+          pkgs.markdown-oxide
+          pkgs.typstyle
+          pkgs.tinymist
+          pkgs.websocat
 
-          lua-language-server
-          stylua
+          pkgs.lua-language-server
+          pkgs.stylua
         ];
         /*
-        nixpkgs.wrapNeovimUnstable is a function which takes two arguments:
-        a neovim packaged
-        an attribute set which specifies any other configuration
-        */
+         * nixpkgs.wrapNeovimUnstable is a function which takes two arguments:
+         * a neovim package
+         * an attribute set which specifies any other configuration
+         */
         nvim = pkgs.wrapNeovimUnstable pkgs.neovim-unwrapped (
           pkgs.neovimUtils.makeNeovimConfig {
-            # LOL THANKS CHATGPT
             customRC = ''
               set runtimepath^=${./.}
               lua << EOF
@@ -46,7 +46,7 @@
                 package.path = config_path .. "/?.lua;" .. config_path .. "/?/init.lua;" .. package.path
                 dofile("${./.}/init.lua")
               EOF
-            ''; # A custom .vimrc file for the new neovim configuration
+            '';
           }
           // {
             wrapperArgs = [
