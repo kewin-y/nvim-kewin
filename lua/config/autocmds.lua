@@ -1,5 +1,14 @@
 local format_group = vim.api.nvim_create_augroup("Format", {})
-local spell_group = vim.api.nvim_create_augroup("spell", {})
+local spell_group = vim.api.nvim_create_augroup("Spell", {})
+local ft_group = vim.api.nvim_create_augroup("Filetype", {})
+
+vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
+    pattern = { "*" },
+    group = ft_group,
+    callback = function(_)
+      vim.cmd("filetype detect")
+    end,
+})
 
 vim.api.nvim_create_autocmd({ "BufWritePre" }, {
     pattern = { "*" },

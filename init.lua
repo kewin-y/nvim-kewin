@@ -8,4 +8,3 @@ require("config.keybinds")
 require("config.lazy")
 require("config.ui")
 require("config.autocmds")
-
