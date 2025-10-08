@@ -26,6 +26,7 @@ return {
                 "astro",
                 "tinymist",
                 "ts_ls",
+                "rust-analyzer",
             }
 
             for _, server in pairs(servers) do

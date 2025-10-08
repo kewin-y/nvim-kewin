@@ -30,6 +30,7 @@ return {
             ts = { "prettierd" },
             jsx = { "prettierd" },
             tsx = { "prettierd" },
+            rs = {"cargo fmt"},
         },
         -- Set default options
         default_format_opts = {
