@@ -26,11 +26,9 @@ return {
             cpp = { "clang-format" },
             nix = { "alejandra" },
             typst = { "typstyle" },
-            js = { "prettierd" },
-            ts = { "prettierd" },
-            jsx = { "prettierd" },
-            tsx = { "prettierd" },
-            rs = {"cargo fmt"},
+            typescript = { "prettierd" },
+            javascript = { "prettierd" },
+            rust = { "rustfmt" },
         },
         -- Set default options
         default_format_opts = {
