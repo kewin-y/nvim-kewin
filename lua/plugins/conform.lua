@@ -7,7 +7,12 @@ return {
             -- Customize or remove this keymap to your liking
             "<leader>fm",
             function()
-                require("conform").format({ async = true })
+                require("conform").format({
+                    async = true,
+                    filter = function(client)
+                        return client.name ~= "ts_ls"
+                    end,
+                })
             end,
             mode = "",
             desc = "Format buffer",
@@ -28,6 +33,8 @@ return {
             typst = { "typstyle" },
             typescript = { "prettierd" },
             javascript = { "prettierd" },
+            typescriptreact = { "prettierd" },
+            javascriptreact = { "prettierd" },
             rust = { "rustfmt" },
         },
         -- Set default options
