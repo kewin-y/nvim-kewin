@@ -27,6 +27,7 @@ return {
                 "tinymist",
                 "ts_ls",
                 "rust_analyzer",
+                "basedpyright",
             }
 
             for _, server in pairs(servers) do

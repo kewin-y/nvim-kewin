@@ -36,6 +36,7 @@ return {
             typescriptreact = { "prettierd" },
             javascriptreact = { "prettierd" },
             rust = { "rustfmt" },
+            python = { "ruff" },
         },
         -- Set default options
         default_format_opts = {
