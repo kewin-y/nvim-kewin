@@ -13,6 +13,11 @@ return {
             { "<leader>bi", "<cmd>FzfLua<CR>", { silent = true } },
         },
         opts = {
+            keymap = {
+                fzf = {
+                    ["ctrl-q"] = "select-all+accept",
+                },
+            },
             defaults = {
                 file_icons = "mini",
             },
