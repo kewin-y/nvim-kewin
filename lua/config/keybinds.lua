@@ -25,3 +25,17 @@ m("v", "K", ":m '<-2<CR>gv=gv", { silent = true })
 m("n", "J", "mzJ`z")
 m("v", "<", "<gv")
 m("v", ">", ">gv")
+
+-- zk
+local opts = { noremap = true, silent = false }
+
+m("n", "<leader>zn", "<Cmd>ZkNew { title = vim.fn.input('Title: ') }<CR>", opts)
+m("n", "<leader>zo", "<Cmd>ZkNotes { sort = { 'modified' } }<CR>", opts)
+m("n", "<leader>zt", "<Cmd>ZkTags<CR>", opts)
+m(
+    "n",
+    "<leader>zf",
+    "<Cmd>ZkNotes { sort = { 'modified' }, match = { vim.fn.input('Search: ') } }<CR>",
+    opts
+)
+m("v", "<leader>zf", ":'<,'>ZkMatch<CR>", opts)
