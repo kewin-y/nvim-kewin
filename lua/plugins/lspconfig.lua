@@ -20,7 +20,7 @@ return {
         config = function()
             local servers = {
                 "lua_ls",
-                "markdown_oxide",
+                -- "markdown_oxide",
                 "clangd",
                 "nixd",
                 "astro",
