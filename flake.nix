@@ -28,6 +28,7 @@
           pkgs.typstyle
           pkgs.tinymist
           pkgs.websocat
+          pkgs.nodejs
 
           pkgs.lua-language-server
           pkgs.stylua
