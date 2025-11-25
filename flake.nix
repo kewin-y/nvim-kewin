@@ -11,8 +11,8 @@
       systems = ["x86_64-linux" "aarch64-linux" "aarch64-darwin" "x86_64-darwin"];
       perSystem = {pkgs, ...}: let
         runtimeDeps = [
-          pkgs.hello
           pkgs.gcc
+          pkgs.tree-sitter
 
           # needed for fzf
           pkgs.fzf
@@ -29,6 +29,7 @@
           pkgs.tinymist
           pkgs.websocat
           pkgs.nodejs
+          pkgs.tectonic
 
           pkgs.lua-language-server
           pkgs.stylua

@@ -21,6 +21,7 @@ return {
                     "typst",
                     "typescript",
                     "javascript",
+                    "latex",
                 },
                 sync_install = false,
                 auto_install = true,
