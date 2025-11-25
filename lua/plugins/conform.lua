@@ -4,7 +4,6 @@ return {
     cmd = { "ConformInfo" },
     keys = {
         {
-            -- Customize or remove this keymap to your liking
             "<leader>fm",
             function()
                 require("conform").format({
@@ -18,7 +17,6 @@ return {
             desc = "Format buffer",
         },
     },
-    -- This will provide type hinting with LuaLS
     ---@module "conform"
     ---@type conform.setupOpts
     opts = {
@@ -38,14 +36,12 @@ return {
             rust = { "rustfmt" },
             python = { "ruff" },
         },
-        -- Set default options
         default_format_opts = {
             lsp_format = "fallback",
         },
         formatters = {},
     },
     init = function()
-        -- If you want the formatexpr, here is the place to set it
         vim.o.formatexpr = "v:lua.require'conform'.formatexpr()"
     end,
 }

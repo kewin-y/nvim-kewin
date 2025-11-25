@@ -4,6 +4,20 @@ require("mini.base16").setup({
     palette = colors,
 })
 
+local hipatterns = require('mini.hipatterns')
+hipatterns.setup({
+    highlighters = {
+        -- Highlight standalone 'FIXME', 'HACK', 'TODO', 'NOTE'
+        fixme = { pattern = '%f[%w]()FIXME()%f[%W]', group = 'MiniHipatternsFixme' },
+        hack  = { pattern = '%f[%w]()HACK()%f[%W]',  group = 'MiniHipatternsHack'  },
+        todo  = { pattern = '%f[%w]()TODO()%f[%W]',  group = 'MiniHipatternsTodo'  },
+        note  = { pattern = '%f[%w]()NOTE()%f[%W]',  group = 'MiniHipatternsNote'  },
+
+        -- Highlight hex color strings (`#rrggbb`) using that color
+        hex_color = hipatterns.gen_highlighter.hex_color(),
+    },
+})
+
 local function hi(group, args)
     local cmd = string.format(
         "highlight %s guifg=%s guibg=%s gui=%s",
@@ -78,3 +92,4 @@ hi_link("BlinkCmpKindTypeParameter", "Type")
 hi_link("BlinkCmpKindUnit", "Special")
 hi_link("BlinkCmpKindValue", "Identifier")
 hi_link("BlinkCmpKindVariable", "Delimiter")
+

@@ -1,8 +1,8 @@
 return {
     {
-        "echasnovski/mini.files",
+        "nvim-mini/mini.files",
         lazy = true,
-        dependencies = { "echasnovski/mini.icons" },
+        dependencies = { "nvim-mini/mini.icons", version = false, opts = {} },
         keys = {
             {
                 "<leader>w",
@@ -20,10 +20,15 @@ return {
         version = false,
     },
     {
-        "echasnovski/mini.base16",
+        "nvim-mini/mini.base16",
         event = "VeryLazy",
         lazy = true,
         version = false,
     },
-    { "echasnovski/mini.icons", version = false, opts = {} },
+    {
+        "nvim-mini/mini.hipatterns",
+        event = "VeryLazy",
+        lazy = true,
+        version = false,
+    },
 }
