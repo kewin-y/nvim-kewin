@@ -61,6 +61,8 @@ hi("MiniFilesTitleFocused", { bg = colors.base00 })
 hi("MiniFilesBorderModified", { fg = colors.base0A })
 hi("MiniStarterItemPrefix", { fg = colors.base0D })
 hi("MiniFilesNormal", { fg = colors.base05, bg = colors.base00 })
+hi("MiniIndentScopeSymbol", { fg = colors.base03 })
+hi("MiniIndentScopeSymbolOff", { fg = colors.base03 })
 
 hi("BlinkCmpMenu", { fg = colors.base05, bg = colors.base00 })
 hi("BlinkCmpMenuBorder", { fg = colors.base05, bg = colors.base00 })
