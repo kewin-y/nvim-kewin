@@ -1,9 +1,16 @@
 local m = vim.keymap.set
+local opts = { noremap = true, silent = false }
+
+-- MOVE
+m("i", "<C-h>", "<Left>", { desc = "move left" })
+m("i", "<C-l>", "<Right>", { desc = "move right" })
+m("i", "<C-j>", "<Down>", { desc = "move down" })
+m("i", "<C-k>", "<Up>", { desc = "move up" })
 
 -- Turn off highlighting
 m("n", "<Esc>", "<cmd>noh<CR>", { silent = true })
 
--- Window :3
+-- Window
 m("n", "<C-h>", "<C-w>h")
 m("n", "<C-l>", "<C-w>l")
 m("n", "<C-j>", "<C-w>j")
@@ -27,8 +34,6 @@ m("v", "<", "<gv")
 m("v", ">", ">gv")
 
 -- zk
-local opts = { noremap = true, silent = false }
-
 m("n", "<leader>zn", "<Cmd>ZkNew { title = vim.fn.input('Title: ') }<CR>", opts)
 m("n", "<leader>zo", "<Cmd>ZkNotes { sort = { 'modified' } }<CR>", opts)
 m("n", "<leader>zt", "<Cmd>ZkTags<CR>", opts)
