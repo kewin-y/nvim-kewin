@@ -15,8 +15,7 @@ return {
                     enabled = false,
                 },
             },
-            image = { enabled = true },
             scope = { enabled = true },
-        }
+        },
     },
 }

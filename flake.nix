@@ -12,7 +12,6 @@
       perSystem = {pkgs, ...}: let
         runtimeDeps = [
           pkgs.gcc
-          pkgs.tree-sitter
 
           # needed for fzf
           pkgs.fzf
@@ -29,7 +28,6 @@
           pkgs.tinymist
           pkgs.websocat
           pkgs.nodejs
-          pkgs.tectonic
 
           pkgs.lua-language-server
           pkgs.stylua
