@@ -12,6 +12,7 @@
       perSystem = {pkgs, ...}: let
         runtimeDeps = [
           pkgs.gcc
+          pkgs.tree-sitter
 
           # needed for fzf
           pkgs.fzf
