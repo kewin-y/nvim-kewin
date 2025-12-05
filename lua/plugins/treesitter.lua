@@ -24,8 +24,8 @@ return {
                     "latex",
                 },
                 sync_install = false,
-                auto_install = true,
-                ignore_install = { "javascript" },
+                auto_install = false,
+                ignore_install = { "r" },
                 highlight = {
                     enable = true,
                 },
