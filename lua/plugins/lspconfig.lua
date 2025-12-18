@@ -20,7 +20,6 @@ return {
         config = function()
             local servers = {
                 "lua_ls",
-                -- "markdown_oxide",
                 "clangd",
                 "nixd",
                 "astro",
@@ -28,6 +27,7 @@ return {
                 "ts_ls",
                 "rust_analyzer",
                 "basedpyright",
+                "tailwindcss",
             }
 
             for _, server in pairs(servers) do
