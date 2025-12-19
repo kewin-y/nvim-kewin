@@ -30,7 +30,7 @@ vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
 })
 
 vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
-    pattern = { "*.nix" },
+    pattern = { "*.nix", "*.hs" },
     group = format_group,
     callback = function(_)
         vim.opt.shiftwidth = 2

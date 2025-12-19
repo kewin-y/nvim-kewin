@@ -35,6 +35,7 @@ return {
             javascriptreact = { "prettierd" },
             rust = { "rustfmt" },
             python = { "ruff" },
+            haskell = { "ormolu" },
         },
         default_format_opts = {
             lsp_format = "fallback",

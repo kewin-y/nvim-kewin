@@ -25,6 +25,7 @@ return {
                     "python",
                     "yaml",
                     "tsx",
+                    "haskell",
                 },
                 sync_install = false,
                 auto_install = false,

@@ -28,6 +28,7 @@ return {
                 "rust_analyzer",
                 "basedpyright",
                 "tailwindcss",
+                "hls",
             }
 
             for _, server in pairs(servers) do
