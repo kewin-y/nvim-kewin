@@ -34,8 +34,8 @@ m("v", "<", "<gv")
 m("v", ">", ">gv")
 
 -- Tabs
-m("n", "<A-=>", "<Cmd>tabnew<CR>")
-m("n", "<A-->", "<Cmd>tabclose<CR>")
+m("n", "<leader>tt", "<Cmd>tabnew<CR>")
+m("n", "<leader>tw", "<Cmd>tabclose<CR>")
 m("n", "<A-l>", "<Cmd>tabnext<CR>")
 m("n", "<A-h>", "<Cmd>tabprevious<CR>")
 
