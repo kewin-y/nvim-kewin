@@ -33,6 +33,12 @@ m("n", "J", "mzJ`z")
 m("v", "<", "<gv")
 m("v", ">", ">gv")
 
+-- Tabs
+m("n", "<A-=>", "<Cmd>tabnew<CR>")
+m("n", "<A-->", "<Cmd>tabclose<CR>")
+m("n", "<A-l>", "<Cmd>tabnext<CR>")
+m("n", "<A-h>", "<Cmd>tabprevious<CR>")
+
 -- zk
 m("n", "<leader>zn", "<Cmd>ZkNew { title = vim.fn.input('Title: ') }<CR>", opts)
 m("n", "<leader>zo", "<Cmd>ZkNotes { sort = { 'modified' } }<CR>", opts)

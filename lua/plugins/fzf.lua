@@ -11,6 +11,7 @@ return {
             { "<leader>fb", "<cmd>FzfLua buffers<CR>", { silent = true } },
             { "<leader>fo", "<cmd>FzfLua oldfiles<CR>", { silent = true } },
             { "<leader>bi", "<cmd>FzfLua<CR>", { silent = true } },
+            { "<leader>sr", "<cmd>FzfLua lsp_references<CR>", { silent = true } },
         },
         opts = {
             keymap = {
