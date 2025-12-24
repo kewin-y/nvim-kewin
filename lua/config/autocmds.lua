@@ -30,15 +30,6 @@ vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
 })
 
 vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
-    pattern = { "*.nix", "*.hs" },
-    group = format_group,
-    callback = function(_)
-        vim.opt.shiftwidth = 2
-        vim.opt.tabstop = 2
-    end,
-})
-
-vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
     pattern = { "*.typ" },
     group = spell_group,
     callback = function(_)
