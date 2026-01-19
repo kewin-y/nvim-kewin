@@ -21,7 +21,7 @@ vim.api.nvim_create_autocmd({ "BufWritePre" }, {
 })
 
 vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
-    pattern = { "*.c", "*.h", "*.cpp", "*.hpp" },
+    pattern = { "*.c", "*.h", "*.cpp", "*.hpp", "*.glsl" },
     group = format_group,
     callback = function(_)
         vim.opt.shiftwidth = 8
