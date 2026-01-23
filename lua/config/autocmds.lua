@@ -24,8 +24,8 @@ vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
     pattern = { "*.c", "*.h", "*.cpp", "*.hpp", "*.glsl" },
     group = format_group,
     callback = function(_)
-        vim.opt.shiftwidth = 8
-        vim.opt.tabstop = 8
+        vim.opt.shiftwidth = 4
+        vim.opt.tabstop = 4
     end,
 })
 
