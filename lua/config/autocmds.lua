@@ -6,7 +6,7 @@ vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
     pattern = { "*" },
     group = ft_group,
     callback = function(_)
-      vim.cmd("filetype detect")
+        vim.cmd("filetype detect")
     end,
 })
 

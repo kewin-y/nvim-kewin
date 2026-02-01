@@ -50,3 +50,6 @@ m(
     opts
 )
 m("v", "<leader>zf", ":'<,'>ZkMatch<CR>", opts)
+
+--- Oil
+m("n", "<leader>w", "<CMD>Oil<CR>")
