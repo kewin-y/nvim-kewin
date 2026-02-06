@@ -4,16 +4,16 @@ return {
     "zk-org/zk-nvim",
     ft = "markdown",
     keys = {
-        { "<leader>zn", "<Cmd>ZkNew { title = vim.fn.input('Title: ') }<CR>", opts },
-        { "<leader>zo", "<Cmd>ZkNotes { sort = { 'modified' } }<CR>", opts },
-        { "<leader>zt", "<Cmd>ZkTags<CR>", opts },
+        { "<leader>on", "<Cmd>ZkNew { title = vim.fn.input('Title: ') }<CR>", opts },
+        { "<leader>oo", "<Cmd>ZkNotes { sort = { 'modified' } }<CR>", opts },
+        { "<leader>ot", "<Cmd>ZkTags<CR>", opts },
         {
-            "<leader>zf",
+            "<leader>of",
             "<Cmd>ZkNotes { sort = { 'modified' }, match = { vim.fn.input('Search: ') } }<CR>",
             opts,
         },
-        { "<leader>zf", ":'<,'>ZkMatch<CR>", "v", opts },
-        { "<leader>zb", "<Cmd>ZkBacklinks<CR>", opts },
+        { "<leader>of", ":'<,'>ZkMatch<CR>", "v", opts },
+        { "<leader>ob", "<Cmd>ZkBacklinks<CR>", opts },
     },
     config = function()
         require("zk").setup({
