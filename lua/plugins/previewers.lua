@@ -18,9 +18,6 @@ return {
             local tinymist_exec = get_exec("tinymist")
             local websocat_exec = get_exec("websocat")
 
-            print(tinymist_exec)
-            print(websocat_exec)
-
             require("typst-preview").setup({
                 dependencies_bin = {
                     ["tinymist"] = tinymist_exec,
@@ -30,19 +27,10 @@ return {
         end,
     },
     {
-        "iamcco/markdown-preview.nvim",
-        cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
-        build = "cd app && npm install",
-        init = function()
-            vim.g.mkdp_filetypes = { "markdown" }
-        end,
-        ft = { "markdown" },
+        "MeanderingProgrammer/render-markdown.nvim",
+        dependencies = { "nvim-treesitter/nvim-treesitter", "nvim-mini/mini.icons" }, -- if you use standalone mini plugins
+        ---@module 'render-markdown'
+        ---@type render.md.UserConfig
+        opts = {},
     },
-    {
-    'MeanderingProgrammer/render-markdown.nvim',
-    dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-mini/mini.icons' },        -- if you use standalone mini plugins
-    ---@module 'render-markdown'
-    ---@type render.md.UserConfig
-    opts = {},
-}
 }

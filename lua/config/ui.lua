@@ -4,14 +4,14 @@ require("mini.base16").setup({
     palette = colors,
 })
 
-local hipatterns = require('mini.hipatterns')
+local hipatterns = require("mini.hipatterns")
 hipatterns.setup({
     highlighters = {
         -- Highlight standalone 'FIXME', 'HACK', 'TODO', 'NOTE'
-        fixme = { pattern = '%f[%w]()FIXME()%f[%W]', group = 'MiniHipatternsFixme' },
-        hack  = { pattern = '%f[%w]()HACK()%f[%W]',  group = 'MiniHipatternsHack'  },
-        todo  = { pattern = '%f[%w]()TODO()%f[%W]',  group = 'MiniHipatternsTodo'  },
-        note  = { pattern = '%f[%w]()NOTE()%f[%W]',  group = 'MiniHipatternsNote'  },
+        fixme = { pattern = "%f[%w]()FIXME()%f[%W]", group = "MiniHipatternsFixme" },
+        hack = { pattern = "%f[%w]()HACK()%f[%W]", group = "MiniHipatternsHack" },
+        todo = { pattern = "%f[%w]()TODO()%f[%W]", group = "MiniHipatternsTodo" },
+        note = { pattern = "%f[%w]()NOTE()%f[%W]", group = "MiniHipatternsNote" },
 
         -- Highlight hex color strings (`#rrggbb`) using that color
         hex_color = hipatterns.gen_highlighter.hex_color(),
@@ -41,7 +41,7 @@ hi("LineNr", { fg = colors.base03 })
 hi("LineNrAbove", { fg = colors.base03 })
 hi("LineNrBelow", { fg = colors.base03 })
 hi("SignColumn", { fg = colors.base03 })
-hi("StatusLine", { fg = colors.base04, bg = colors.base01})
+hi("StatusLine", { fg = colors.base04, bg = colors.base01 })
 
 hi("DiagnosticFloatingError", { fg = colors.base08, bg = colors.base00 })
 hi("DiagnosticFloatingHint", { fg = colors.base0A, bg = colors.base00 })
@@ -53,16 +53,6 @@ hi("DiagnosticSignHint", { fg = colors.base0A, bg = colors.base00 })
 hi("DiagnosticSignInfo", { fg = colors.base0C, bg = colors.base00 })
 hi("DiagnosticSignOk", { fg = colors.base0B, bg = colors.base00 })
 hi("DiagnosticSignWarn", { fg = colors.base0E, bg = colors.base00 })
-
-hi("MiniFilesBorder", { fg = colors.base05 })
-hi("MiniFilesCursorLine", { bg = colors.base01 })
-hi("MiniFilesTitle", { bg = colors.base00 })
-hi("MiniFilesTitleFocused", { bg = colors.base00 })
-hi("MiniFilesBorderModified", { fg = colors.base0A })
-hi("MiniStarterItemPrefix", { fg = colors.base0D })
-hi("MiniFilesNormal", { fg = colors.base05, bg = colors.base00 })
-hi("MiniIndentScopeSymbol", { fg = colors.base03 })
-hi("MiniIndentScopeSymbolOff", { fg = colors.base03 })
 
 hi("BlinkCmpMenu", { fg = colors.base05, bg = colors.base00 })
 hi("BlinkCmpMenuBorder", { fg = colors.base05, bg = colors.base00 })
@@ -94,4 +84,3 @@ hi_link("BlinkCmpKindTypeParameter", "Type")
 hi_link("BlinkCmpKindUnit", "Special")
 hi_link("BlinkCmpKindValue", "Identifier")
 hi_link("BlinkCmpKindVariable", "Delimiter")
-

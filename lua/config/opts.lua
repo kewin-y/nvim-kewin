@@ -1,16 +1,16 @@
 vim.opt.fillchars = { eob = " " }
 vim.opt.termguicolors = true
-vim.opt.shiftwidth = 2
-vim.opt.tabstop = 2
+vim.opt.shiftwidth = 4
+vim.opt.tabstop = 4
 vim.opt.expandtab = true
 vim.opt.smartindent = true
 vim.opt.laststatus = 3
 vim.opt.showmode = false
+vim.opt.numberwidth = 2
 vim.opt.smartcase = true
 vim.opt.foldmethod = "manual"
 vim.opt.mouse = ""
 vim.opt.number = true
-vim.opt.numberwidth = 2
 vim.opt.ruler = false
 vim.opt.signcolumn = "yes"
 vim.opt.splitbelow = true

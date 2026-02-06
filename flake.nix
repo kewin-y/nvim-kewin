@@ -24,20 +24,13 @@
 
           # for my notes
           pkgs.prettierd
-          pkgs.markdown-oxide
           pkgs.typstyle
           pkgs.tinymist
           pkgs.websocat
-          pkgs.nodejs
 
           pkgs.lua-language-server
           pkgs.stylua
         ];
-        /*
-         * nixpkgs.wrapNeovimUnstable is a function which takes two arguments:
-         * a neovim package
-         * an attribute set which specifies any other configuration
-         */
         nvim = pkgs.wrapNeovimUnstable pkgs.neovim-unwrapped (
           pkgs.neovimUtils.makeNeovimConfig {
             customRC = ''
@@ -55,7 +48,7 @@
               "PATH"
               ":"
               "${pkgs.lib.makeBinPath runtimeDeps}"
-            ]; # See https://nixos.org/manual/nixpkgs/stable/#fun-makeWrapper
+            ];
           }
         );
       in {
