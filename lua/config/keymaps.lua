@@ -29,8 +29,6 @@ m("v", ">", ">gv")
 -- Tabs
 m("n", "<leader>tt", "<Cmd>tabnew<CR>")
 m("n", "<leader>tw", "<Cmd>tabclose<CR>")
-m("n", "<A-l>", "<Cmd>tabnext<CR>")
-m("n", "<A-h>", "<Cmd>tabprevious<CR>")
 
 --- Oil
 m("n", "<leader>w", "<CMD>edit .<CR>")
