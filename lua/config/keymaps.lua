@@ -29,31 +29,8 @@ m("v", ">", ">gv")
 -- Tabs
 m("n", "<leader>tt", "<Cmd>tabnew<CR>")
 m("n", "<leader>tw", "<Cmd>tabclose<CR>")
+m("n", "<A-l>", "<Cmd>tabnext<CR>")
+m("n", "<A-h>", "<Cmd>tabprevious<CR>")
 
 --- Oil
 m("n", "<leader>w", "<CMD>edit .<CR>")
-
-local function open_in_obsidian()
-    local vault = "notes" -- <-- change this
-    local file = vim.fn.expand("%:p")
-
-    if file == "" then
-        vim.notify("No file name", vim.log.levels.WARN)
-        return
-    end
-
-    -- convert absolute path → vault-relative path
-    local vault_path = vim.fn.expand("~/Documents/notes") -- <-- change this
-    local rel = file:gsub("^" .. vim.pesc(vault_path) .. "/", "")
-
-    -- URL encode spaces
-    rel = rel:gsub(" ", "%%20")
-
-    local url = string.format("obsidian://open?vault=%s&file=%s", vault, rel)
-
-    vim.fn.jobstart({ "xdg-open", url }, { detach = true })
-end
-
-m("n", "<leader>op", function()
-    open_in_obsidian()
-end)
