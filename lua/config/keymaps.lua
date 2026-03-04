@@ -33,4 +33,4 @@ m("n", "<A-l>", "<Cmd>tabnext<CR>")
 m("n", "<A-h>", "<Cmd>tabprevious<CR>")
 
 --- Oil
-m("n", "<leader>w", "<CMD>edit .<CR>")
+m("n", "<leader>w", "<CMD>Oil --float<CR>")
